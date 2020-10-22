@@ -17,6 +17,9 @@ module.exports = {
     "prettier/react",
     "prettier/@typescript-eslint",
   ],
+   parserOptions: {
+   project: './tsconfig.json',
+   }, 
   env: {
     node: true,
     browser: true,
