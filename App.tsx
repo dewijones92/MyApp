@@ -45,6 +45,12 @@ const renderModal = () => {
           <View style={modalStyles.modalView}>
             <Text style={modalStyles.modalText}>Hello World!</Text>
 
+            <Text style={modalStyles.modalText}>Hello World!</Text>
+            <Text style={modalStyles.modalText}>Hello World!</Text>
+            <Text style={modalStyles.modalText}>Hello World!</Text>
+            <Text style={modalStyles.modalText}>Hello World!</Text>
+            <Text style={modalStyles.modalText}>Hello World22!</Text>
+
             <TouchableHighlight
               style={{...modalStyles.openButton, backgroundColor: '#2196F3'}}
               onPress={() => {
@@ -88,7 +94,6 @@ const App = () => {
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              {renderModal()}
               <Text style={styles.sectionTitle}>See Your Changes</Text>
               <Text style={styles.sectionDescription}>
                 <ReloadInstructions />
@@ -101,6 +106,7 @@ const App = () => {
               </Text>
             </View>
             <View style={styles.sectionContainer}>
+              {renderModal()}
               <Text style={styles.sectionTitle}>Learn More</Text>
               <Text style={styles.sectionDescription}>
                 Read the docs to discover what to do next:
