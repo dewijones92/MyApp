@@ -26,15 +26,13 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-declare const global: {HermesInternal: null | {}};
+declare const global: {HermesInternal: null | Record<string, unknown>};
 
 const App = () => (
   <>
     <StatusBar barStyle="dark-content" />
     <SafeAreaView>
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}>
+      <ScrollView contentInsetAdjustmentBehavior="automatic">
         <Header />
         {global.HermesInternal == null ? null : (
           <View style={styles.engine}>
