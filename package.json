@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "check-types": "yarn run tsc --watch",
+    "check-types-watch": "yarn run check-types --watch",
+    "check-types": "yarn run tsc",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "./lint --quiet",
+    "lint-fix": "./lint --fix",
     "lint-fix": "yarn run eslint --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
