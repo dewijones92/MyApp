@@ -18,6 +18,7 @@ import {
   StatusBar,
   Modal,
   TouchableHighlight,
+  Alert,
 } from 'react-native';
 
 import {
