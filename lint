@@ -1,0 +1,2 @@
+set -x;
+yarn run eslint --ext .js,.jsx,.ts,.tsx $@
